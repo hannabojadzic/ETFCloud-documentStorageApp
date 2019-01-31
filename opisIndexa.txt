@@ -1,0 +1,6 @@
+Jedini tip indexa u bazi:
+
+CREATE UNIQUE INDEX Uniqueindexfajl on Fajl(id_korisnik,naziv);
+
+Ovaj index je kreiran da ubrza pretragu datoteka koje je korisnik prethodno uploadovao. Ovo je narocito znacajno jer se pri svakom insertu vrši provjera(što je ustvari pretraga) po ovim poljima radi zabrane unosa dvije datoteke sa istim nazivom za jednog korisnika. 
+

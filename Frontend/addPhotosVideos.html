@@ -1,0 +1,121 @@
+<html>
+<head>
+    <title>ETFcloud</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:700,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">ETF Cloud</a>
+        </div>
+
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">Sign out</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <div id="unosSlike" style=" margin-top:50px" class="mainbox col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-2">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <div class="panel-title">Unos slike</div>
+            </div>
+            <div class="panel-body" >
+                <form method="post" action=".">
+                    <input type='hidden' name='csrfmiddlewaretoken' value='XFe2rTYl9WOpV8U6X5CfbIuOZOELJ97S' />
+
+
+                    <form  class="form-horizontal" method="post" >
+                        <input type='hidden' name='csrfmiddlewaretoken' value='XFe2rTYl9WOpV8U6X5CfbIuOZOELJ97S' />
+
+                        <div id="div_nazivSlike" class="form-group required">
+                            <label for="div_nazivSlike" class="control-label col-md-4  requiredField"> Naziv slike<span class="asteriskField">*</span> </label>
+                            <div class="controls col-md-8 ">
+                                <input class="input-md  textinput textInput form-control" id="nazivSlike" maxlength="255" name="nazivSlike" placeholder="Odaberite naziv slike" style="margin-bottom: 10px" type="text" />
+                            </div>
+                        </div>
+                        <div id="div_opisSlike" class="form-group required">
+                            <label for="div_opisSlike" class="control-label col-md-4  requiredField"> Opis slike<span class="asteriskField">*</span> </label>
+                            <div class="controls col-md-8 ">
+                                <input class="input-md  textinput textInput form-control" id="opisSlike" maxlength="255" name="opisSlike" placeholder="Unesite opis slike" style="margin-bottom: 10px" type="text" />
+                            </div>
+                        </div>
+                        <div id="div_unosSlike" class="form-group required">
+                            <label for="div_unosSlike" class="control-label col-md-4  requiredField"> Odaberite sliku<span class="asteriskField">*</span> </label>
+                            <div class="controls col-md-8 ">
+                                <input type="file" id="inputSlike" onchange="handleFiles(this.files)">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="aab controls col-md-9 "></div>
+                            <div class="controls col-md-3 ">
+                                <input type="submit" name="submit-slika" value="Dodaj sliku" class="btn btn-primary btn btn-info" id="submit-slika" />
+                            </div>
+                        </div>
+
+
+                    </form>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="unosVidea" style=" margin-top:50px" class="mainbox col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-2">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <div class="panel-title">Unos videa</div>
+            </div>
+            <div class="panel-body" >
+                <form method="post" action=".">
+                    <input type='hidden' name='csrfmiddlewaretoken' value='XFe2rTYl9WOpV8U6X5CfbIuOZOELJ97S' />
+
+
+                    <form  class="form-horizontal" method="post" >
+                        <input type='hidden' name='csrfmiddlewaretoken' value='XFe2rTYl9WOpV8U6X5CfbIuOZOELJ97S' />
+
+                        <div id="div_nazivVIdea" class="form-group required">
+                            <label for="div_nazivVidea" class="control-label col-md-4  requiredField"> Naziv videa<span class="asteriskField">*</span> </label>
+                            <div class="controls col-md-8 ">
+                                <input class="input-md  textinput textInput form-control" id="nazivVideo" maxlength="30" name="nazivVideo" placeholder="Odaberite naziv videa" style="margin-bottom: 10px" type="text" />
+                            </div>
+                        </div>
+                        <div id="div_opisVidea" class="form-group required">
+                            <label for="div_opisVidea" class="control-label col-md-4  requiredField"> Opis videa<span class="asteriskField">*</span> </label>
+                            <div class="controls col-md-8 ">
+                                <input class="input-md  textinput textInput form-control" id="opisVidea" maxlength="255" name="opisVidea" placeholder="Unesite opis videa" style="margin-bottom: 10px" type="text" />
+                            </div>
+                        </div>
+                        <div id="div_unosVidea" class="form-group required">
+                            <label for="div_unosVidea" class="control-label col-md-4  requiredField"> Odaberite video<span class="asteriskField">*</span> </label>
+                            <div class="controls col-md-8 ">
+                                <input type="file" id="inputVidea" onchange="handleFiles(this.files)">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="aab controls col-md-9 "></div>
+                            <div class="controls col-md-3 ">
+                                <input type="submit" name="submit-video" value="Dodaj video" class="btn btn-primary btn btn-info" id="submit-id-signup-video" />
+                            </div>
+                        </div>
+
+
+                    </form>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+INSERT INTO Predmet
+(naziv,ciklus,semestar)
+VALUES
+('Baze podataka',2,1);
+INSERT INTO Predmet
+(naziv,ciklus,semestar)
+VALUES
+('Osnove baza podataka',1,3);
+INSERT INTO Predmet
+(naziv,ciklus,semestar)
+VALUES
+('Ugradbeni sistemi',1,4);
+INSERT INTO Predmet
+(naziv,ciklus,semestar)
+VALUES
+('Administracija raèunarskih mreža',1,6);
+INSERT INTO Predmet
+(naziv,ciklus,semestar)
+VALUES
+('Logièki dizajn',1,3);
